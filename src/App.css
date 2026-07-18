@@ -1,0 +1,115 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--nav-bg);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  background-color: var(--nav-bg);
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--nav-text);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--nav-text-hover);
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.background-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* User should replace this with their actual uploaded background image URL */
+  /* e.g., background-image: url('./assets/my-photo.jpg'); */
+  background-image: url('./assets/brand%20blend.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+/* Fallback gradient if image doesn't exist or is too small */
+.background-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+  pointer-events: none;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+  /* Optional: Add a subtle animation to the text */
+  animation: fadeIn 1s ease-out;
+}
+
+.overlay-text h1 {
+  font-size: 72px;
+  font-weight: 500;
+  color: var(--gold-accent);
+  margin: 0;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .overlay-text h1 {
+    font-size: 48px;
+  }
+  
+  .nav-links {
+    gap: 24px;
+  }
+}

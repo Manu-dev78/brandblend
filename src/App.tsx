@@ -3,7 +3,7 @@ import InteractiveDotGrid from './components/aicanvas/dot-grid';
 
 const SERVICES = [
   {
-    title: 'The Chronos Series',
+    title: 'The Chronos',
     image:
       'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80&auto=format&fit=crop',
     href: '#chronos',

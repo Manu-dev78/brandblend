@@ -15,7 +15,7 @@ const SERVICES = [
     href: '#weekender',
   },
   {
-    title: 'Aura Diffuser',
+    title: 'Diffuser',
     image:
       'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80&auto=format&fit=crop',
     href: '#aura',

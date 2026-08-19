@@ -172,7 +172,7 @@
    ===================== */
 
 .services-section {
-  background-color: #060c17;
+  background-color: transparent;
   padding: 40px 40px 100px;
   position: relative;
   overflow: hidden;
@@ -301,7 +301,7 @@
    ===================== */
 
 .site-footer {
-  background-color: #060c17;
+  background-color: transparent;
   padding: 56px 40px 40px;
   text-align: center;
   border-top: 1px solid rgba(220, 167, 37, 0.06);

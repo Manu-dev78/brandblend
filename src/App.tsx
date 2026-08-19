@@ -1,24 +1,42 @@
 import './App.css';
 import InteractiveDotGrid from './components/aicanvas/dot-grid';
+import img3DSignatures from './assets/3D signatures.jpeg';
+import imgNailProps from './assets/nail props.jpeg';
+import imgNeonSignages from './assets/neon singnages.jpeg';
+import imgNoCutPrinting from './assets/no cut printing.jpeg';
+import imgPriceBooks from './assets/price books and catalogue.jpeg';
+import imgVinnylPaySign from './assets/vinnyl pay sign.jpeg';
 
 const SERVICES = [
   {
-    title: 'The Chronos',
-    image:
-      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80&auto=format&fit=crop',
-    href: '#chronos',
+    title: '3D signatures',
+    image: img3DSignatures,
+    href: '#3d-signatures',
   },
   {
-    title: 'Signature Weekender',
-    image:
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80&auto=format&fit=crop',
-    href: '#weekender',
+    title: 'nail props',
+    image: imgNailProps,
+    href: '#nail-props',
   },
   {
-    title: 'Diffuser',
-    image:
-      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80&auto=format&fit=crop',
-    href: '#aura',
+    title: 'neon singnages',
+    image: imgNeonSignages,
+    href: '#neon-signages',
+  },
+  {
+    title: 'no cut printing',
+    image: imgNoCutPrinting,
+    href: '#no-cut-printing',
+  },
+  {
+    title: 'price books and catalogue',
+    image: imgPriceBooks,
+    href: '#price-books-and-catalogue',
+  },
+  {
+    title: 'vinnyl pay sign',
+    image: imgVinnylPaySign,
+    href: '#vinnyl-pay-sign',
   },
 ];
 
@@ -62,8 +80,6 @@ function App() {
         <span className="experience-eyebrow">What We Offer</span>
         <h2 className="experience-title">The BrandBlend Experience</h2>
         <p className="experience-subtitle">
-          From curated collections to white-glove delivery, every detail is crafted for the
-          discerning few.
         </p>
       </section>
 

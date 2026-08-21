@@ -89,18 +89,13 @@
   line-height: 1;
 }
 
-/* Hero tagline (centered on hero image) */
+/* Hero tagline (above BrandBlend) */
 .hero-tagline {
-  position: absolute;
-  bottom: 12%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
   color: rgba(241, 241, 248, 0.85);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.3px;
-  margin: 0;
+  margin: 0 0 16px 0;
   font-family: 'Inter', sans-serif;
 }
 
@@ -386,6 +381,6 @@
 
   .hero-tagline {
     font-size: 14px;
-    bottom: 10%;
+    margin: 0 0 10px 0;
   }
 }

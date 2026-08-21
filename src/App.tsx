@@ -1,5 +1,6 @@
 import './App.css';
 import InteractiveDotGrid from './components/aicanvas/dot-grid';
+import img2DSignages from './assets/2D signages.jpeg';
 import img3DSignatures from './assets/3D signatures.jpeg';
 import imgNailProps from './assets/nail props.jpeg';
 import imgNeonSignages from './assets/neon singnages.jpeg';
@@ -8,6 +9,11 @@ import imgPriceBooks from './assets/price books and catalogue.jpeg';
 import imgVinnylPaySign from './assets/vinnyl pay sign.jpeg';
 
 const SERVICES = [
+  {
+    title: '2D signages',
+    image: img2DSignages,
+    href: '#2d-signages',
+  },
   {
     title: '3D signatures',
     image: img3DSignatures,
@@ -69,9 +75,9 @@ function App() {
       <main className="main-content">
         <div className="background-image-container">
           <div className="overlay-text">
-            <h1>BrandBlend</h1>
+            <p className="hero-tagline">Embrace Your Authentic Self</p>
+            <h1><span style={{ color: 'white' }}>Brand</span>Blend</h1>
           </div>
-          <p className="hero-tagline">Embrace Your Authentic Self</p>
         </div>
       </main>
 
@@ -116,7 +122,7 @@ function App() {
       {/* Footer */}
       <footer className="site-footer">
         <h3 className="footer-brand">BrandBlend</h3>
-        <p className="footer-tagline">Elevating everyday life with curated luxury.</p>
+        
         <nav className="footer-links">
           <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Service</a>
